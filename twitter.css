@@ -1,0 +1,399 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: black;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+  overflow: hidden;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.rightmenu {
+  width: 25%;
+  padding: 20px;
+}
+
+.logo {
+  width: 20px;
+}
+.logo:hover {
+  cursor: pointer;
+}
+
+.logo img {
+  width: 45px;
+}
+
+.menu-item {
+  display: flex;
+  align-items: center;
+  padding: 7px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: 55%;
+  margin-bottom: 7px;
+  border-radius: 10px;
+  font-size: 1.1rem;
+}
+
+.menu-item:hover {
+  background-color: #202327;
+}
+
+.icon {
+  margin-right: 15px;
+}
+
+.post-button {
+  width: 80%;
+  height: 50px;
+  padding: 10px;
+  background-color: #1da1f2;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  margin-top: 0px;
+  font-size: 16px;
+  border-radius: 30px;
+}
+.post-button:hover {
+  background-color: #0f81c7;
+}
+
+.profile {
+  position: fixed;
+  bottom: 10px;
+  left: 75px;
+  display: flex;
+  align-items: center;
+  padding: 10px 30px;
+  border-radius: 30px;
+  margin-top: 30px;
+}
+.profile:hover {
+  cursor: pointer;
+  background-color: #202327;
+}
+
+.profile-pic {
+  width: 40px;
+  height: 40px;
+  background-color: #1a91da;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+}
+
+.profile-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-name {
+  font-weight: bold;
+}
+
+.profile-handle {
+  color: #8899a6;
+}
+
+.main {
+  width: 50%;
+  border-left: 1px solid #38444d;
+  border-right: 1px solid #38444d;
+  overflow-y: auto;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+
+.main-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  justify-content: space-evenly;
+
+  border-bottom: 1px solid #38444d;
+}
+.main-header div {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+.main-header h2 {
+  font-size: larger;
+  padding: 20px;
+}
+
+.inactive {
+  color: #8899a6;
+}
+.active h2 {
+  border-bottom: #1a91da 3px solid;
+}
+.main-header div:hover {
+  cursor: pointer;
+  background-color: #202327;
+}
+
+.tweet {
+  width: 100%;
+  display: flex;
+  padding: 20px;
+  border-bottom: 1px solid #38444d;
+  flex-direction: column;
+}
+.tweet-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  justify-content: flex-start;
+  width: 100%;
+}
+.tweet-header:hover {
+  cursor: pointer;
+}
+
+.tweet-input {
+  width: 100%;
+  font-size: 1.5rem;
+  width: 100%;
+  padding: 20px;
+  border: none;
+  background-color: transparent;
+  color: white;
+  outline: none;
+}
+
+.tweet-footer {
+  display: flex;
+  margin-left: 50px;
+  margin-top: 10px;
+  justify-content: space-between;
+}
+.tweet-footer button {
+  background-color: #1da1f2;
+  padding: 10px 20px;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 30px;
+}
+
+.tweet-footer button:hover {
+  background-color: #0f81c7;
+}
+
+.feed {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.tweet-body {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: right;
+  gap: 20px;
+}
+
+.tweet-body img {
+  width: 95%;
+}
+
+.leftmenu {
+  width: 30%;
+  padding: 20px;
+  overflow-y: auto;
+  height: 100vh;
+}
+.search {
+  display: flex;
+  align-items: center;
+  background-color: #202327;
+  padding: 5px;
+  border-radius: 30px;
+  margin-bottom: 20px;
+  position: relative;
+}
+.search button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+}
+.searchicon {
+  width: 20px;
+  height: 20px;
+  margin-left: 10px;
+}
+
+.search-input {
+  background-color: transparent;
+  border: none;
+  color: #ffffff;
+  width: 100%;
+  margin-left: 10px;
+  padding: 10px;
+  padding-left: 30px;
+  outline: none;
+}
+
+.subscribe-box {
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #38444d;
+}
+.subscribe-box h2 {
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+}
+
+.subscribe-button {
+  background-color: #1da1f2;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 20px;
+  margin-top: 10px;
+  width: 40%;
+  font-size: 14px;
+}
+.subscribe-button:hover {
+  background-color: #0f81c7;
+}
+.whats-happening {
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #38444d;
+}
+.whats-happening h2 {
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+}
+.trend {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+.trend:hover {
+  cursor: pointer;
+}
+.trend span {
+  color: #8899a6;
+}
+.trend p {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: end;
+}
+.who-to-follow {
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #38444d;
+}
+.who-to-follow:hover {
+  cursor: pointer;
+}
+.who-to-follow h2 {
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+}
+.follow {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  margin-bottom: 10px;
+  position: relative;
+}
+.follow button {
+  background-color: #1da1f2;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 20px;
+  margin-left: 10px;
+  font-size: 14px;
+  position: absolute;
+  right: 0;
+}
+.follow button:hover {
+  background-color: #0f81c7;
+}
+.footer {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  align-items: center;
+  text-align: center;
+  font-size: 1rem;
+  color: #8899a6;
+  margin-bottom: 50px;
+}
+.message {
+  position: fixed;
+  bottom: 0;
+  right: 20px;
+  width: 374px;
+  background-color: black;
+  padding: 15px;
+  border-radius: 10px 10px 0 0;
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #38444d;
+  border-left: 1px solid #38444d;
+  border-right: 1px solid #38444d;
+  box-shadow: 3px 5px 15px 5px rgba(164, 163, 163, 0.5);
+}
+.message:hover {
+  cursor: pointer;
+}
+
+.tweet-footer img {
+  width: 25px;
+}
+
+.tweet-footer img:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: all 0.3s ease-in-out;
+}
+.show-more {
+  text-decoration: none;
+  color: #1987d1;
+}
+.show-more:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.messagbtn:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: all 0.3s ease-in-out;
+}
